@@ -1,0 +1,55 @@
+{
+    "version" : "1.0.0",
+    "production" : "http://www.ve.cn",
+    "dev" : "http://tt.ve.cn",
+    "rc" : "http://rc.ve.cn",
+    "test" : "http://test.ve.cn",
+    "u" : "http://utest.ve.cn",
+    "loginPage" : "../seller_info/seller_login.html",
+    "includes" : {
+      "imageUploadUrl" : "${host}/?ctl=seller&act=upload_img",
+      "gUploadImage"   : "${host}/?ctl=seller_goods&act=upload_img"
+    },
+
+    "nav" : {
+        "items" : [
+            {
+                "id" : "l001",
+                "icon":" fa-th-large",
+                "item" : "促销活动管理",
+                "url" : "../html/promotion_management.html",
+                "children" : [
+                    {
+                        "id" : "l0011",
+                        "item" : "促销活动管理",
+                        "url" : "../html/promotion_management.html"
+                    },
+                    {
+                        "id" : "l0012",
+                        "item" : "新增促销活动",
+                        "url" : "../html/promotion_new_add.html"
+                    }
+                ]
+            },
+            {
+                "id" : "l002",
+                "icon":" fa-th-large",
+                "item" : "促销活动管理",
+                "url" : "../html/promotion_management.html",
+                "children" : [
+                    {
+                        "id" : "l0021",
+                        "item" : "促销活动管理",
+                        "url" : "../html/promotion_management.html"
+                    },
+                    {
+                        "id" : "l0022",
+                        "item" : "新增促销活动",
+                        "url" : "../html/promotion_new_add.html"
+                    }
+                ]
+            }
+        ]
+    },
+    "debug" : "true"
+}

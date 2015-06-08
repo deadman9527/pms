@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>促销活动管理 | 新增促销活动</title>
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- inject:js -->
+    <!-- endinject -->
+</head>
+<body class="pace-done body-small fixed-sidebar">
+<!--#insert file="../common/header.html" -->
+<div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        @@include('common/templates/nav.html', {"parent": "l001", "child": "l0012"})
+    </nav>
+</div>
+<div id="page-wrapper" class="gray-bg">
+    <div class="wrapper wrapper-content no-padding">
+        <div class="row border-bottom">
+            <div class="col-lg-12">
+                <nav class="navbar navbar-fixed-top ex" role="navigation">
+                    <h2 class="title">优惠促销方案设置</h2>
+
+                    <div class="navbar-header navbar-right ex">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary smallmenu" href="javascript:;"
+                           cb-event="click~save">保存</a>
+                    </div>
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary smallmenu" href="javascript:;"><i
+                                class="fa fa-bars"></i></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight adjust">
+            <div class="row">
+                <div class="col-lg-12" cb-node="base_info_box">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight">
+            <div class="row">
+                <div class="col-lg-12" cb-node="goods_info_box">
+                </div>
+            </div>
+        </div>
+        <div class="wrapper wrapper-content animated fadeInRight" style="padding-bottom: 40px;">
+            <div class="row " cb-node="insertTemplate">
+                <div class="col-lg-6" id="add_sample" cb-node="add_sample">
+                    <div class="ibox-content" style="display: block;height: 450px;">
+                        <h2 style="text-align:center;">新增优惠目标：</h2>
+
+                        <a>
+                            <div class="dashborder" cb-event="click~createNewRulePanel">
+                                <p class="text-center">
+                                    <i class="fa fa-plus big-icon"></i>
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--#insert file="../common/footer.html" -->
+</body>
+
+</html>

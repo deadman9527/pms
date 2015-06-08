@@ -1,0 +1,26 @@
+{
+    "statusCode": 200,
+    "responseBody": {
+        "responseInfo": {
+            "reasons": {
+                "code": "0000",
+                "type": 0,
+                "msg": "操作成功"
+            }
+        },
+        "data": [
+            {
+                "id":"1234",
+                "name":"测试1"
+            },
+            {
+                "id":"1234",
+                "name":"测试2"
+            }
+        ],
+        "total": "2",
+        "pagesize": 10,
+        "total_pages": 1,
+        "page": 1
+    }
+}

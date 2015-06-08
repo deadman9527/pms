@@ -1,0 +1,27 @@
+{{?it}}
+<div class="sidebar-collapse">
+    <ul class="nav" id="side_menu" cb-node="side_menu">
+        <li class="nav-header">
+            <div class="dropdown profile-element" cb-node="user_info">
+            </div>
+            <div class="logo-element">
+                IN+
+            </div>
+        </li>
+        {{~it.items:p:idx }}
+        <li {{?p.id=="@@parent"}}class="active"{{??}}{{?}}>
+            <a href="{{=p.url}}"><i class="fa {{?p.icon}}{{=p.icon}}{{?}}"></i> <span
+                    class="nav-label">促销活动管理</span> <span
+                    class="fa arrow"></span></a>
+            {{? p.children}}
+            <ul class="nav nav-second-level collapse {{?p.id=="@@parent"}}in{{?}}">
+            	{{~p.children:child:index }}
+            	<li {{? child.id=="@@child"}}class="active"{{??}}{{?}}><a href="{{=child.url}}">{{=child.item}}</a></li>
+                {{~}}
+            </ul>
+            {{?}}
+        </li>
+        {{~}}
+    </ul>
+</div>
+{{?}}

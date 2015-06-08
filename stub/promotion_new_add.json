@@ -1,0 +1,19 @@
+{
+    "statusCode": 200,
+    "responseBody": {
+        "responseInfo": {
+            "reasons": {
+                "code": "0000",
+                "type": 0,
+                "msg": "操作成功"
+            }
+        },
+        "data": {
+            "name": "小强专业挖掘机",
+            "brands": "llll",
+            "waitForShipNum": 0,
+            "is_capital": 1,
+            "capital": 1000
+        }
+    }
+}

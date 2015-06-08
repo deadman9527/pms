@@ -1,0 +1,83 @@
+{
+    "statusCode": 200,
+    "responseBody": {
+        "responseInfo": {
+            "reasons": {
+                "code": "0000",
+                "type": 0,
+                "msg": "操作成功"
+            }
+        },
+        "data": [
+            {
+                "id":"1234",
+                "name":"测试1",
+                "start_time":"2015/01/20 10:20",
+                "end_time":"2015/01/20 11:20",
+                "priority":"1",
+                "ifTicket":"是",
+                "rule":"A:新访客用户；满100减10",
+                "status":"待审核",
+                "status_code":"0"
+            },
+            {
+                "id":"1234",
+                "name":"测试1",
+                "start_time":"2015/01/20 10:20",
+                "end_time":"2015/01/20 11:20",
+                "priority":"1",
+                "ifTicket":"是",
+                "rule":"A:新访客用户；满100减10",
+                "status":"待审核",
+                "status_code":"0"
+            },
+            {
+                "id":"1234",
+                "name":"测试1",
+                "start_time":"2015/01/20 10:20",
+                "end_time":"2015/01/20 11:20",
+                "priority":"1",
+                "ifTicket":"是",
+                "rule":"A:新访客用户；满100减10",
+                "status":"待审核",
+                "status_code":"0"
+            },
+            {
+                "id":"1234",
+                "name":"测试1",
+                "start_time":"2015/01/20 10:20",
+                "end_time":"2015/01/20 11:20",
+                "priority":"1",
+                "ifTicket":"是",
+                "rule":"A:新访客用户；满100减10",
+                "status":"待审核",
+                "status_code":"0"
+            },
+            {
+                "id":"1234",
+                "name":"测试1",
+                "start_time":"2015/01/20 10:20",
+                "end_time":"2015/01/20 11:20",
+                "priority":"1",
+                "ifTicket":"是",
+                "rule":"A:新访客用户；满100减10",
+                "status":"待审核",
+                "status_code":"0"
+            },            {
+                "id":"1234",
+                "name":"测试1",
+                "start_time":"2015/01/20 10:20",
+                "end_time":"2015/01/20 11:20",
+                "priority":"1",
+                "ifTicket":"是",
+                "rule":"A:新访客用户；满100减10",
+                "status":"待审核",
+                "status_code":"0"
+            }
+        ],
+        "total": "100",
+        "pagesize": 10,
+        "total_pages": 30,
+        "page": 5
+    }
+}

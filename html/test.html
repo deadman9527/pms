@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="../src/jq.js"></script>
+    <script src="../src/t.js"></script>
+    <script src="../src/cobra.js"></script>
+</head>
+<body>
+    <div yp-controller="test1">
+        <div yp-model="item.title"></div>
+        <input type="text" yp-model="item.title" placeholder="test"/>
+
+        <div yp-controller="test2">
+            <div yp-template="tests/test" yp-model="items" yp-render="tmpl"></div>
+        </div>
+
+        <button onclick="test();" cb-node="hello" yp-model="item.title">run</button>
+    </div>
+
+    <button cb-event="click~sayHi">Test</button>
+    <script>
+        function test(){
+            cobra._({
+                "~name" : "just.a.test",
+
+                "~superclass" : cobra.base,
+
+                ctor : function(){
+                    this._super();
+                },
+
+                postCreate : function(){
+                    var that = this;
+                    this.$test1.item = {title : 4};
+
+                    that.$test2.items = [{title : 2, quantity : 10}, {title : 3 , quantity : 30}];
+
+                    setTimeout(function(){
+                        that.$test2.items[1].title = "what";
+                        that.$digest();
+                    }, 3000);
+                    console.log(this);
+                },
+
+                sayHi : function(){
+                    this.$.hello.before('<span cb-node="uv">xxvxvvvvcxvxc</span>')
+                }
+            });
+            new just.a.test();
+        }
+    </script>
+</body>
+</html>

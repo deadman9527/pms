@@ -1,0 +1,41 @@
+{
+    "statusCode": 200,
+    "responseBody": {
+        "responseInfo": {
+            "reasons": {
+                "code": "0000",
+                "type": 0,
+                "msg": "操作成功"
+            }
+        },
+        "usergroup":[{
+                "id": 1,
+                "type": "A1",
+                "level": 0
+            }, {
+                "id": 2,
+                "type": "A2",
+                "level": 0
+            }, {
+                "id": 3,
+                "type": "B1",
+                "level": 0
+            }, {
+                "id": 4,
+                "type": "B2",
+                "level": 0
+            }, {
+                "id": 5,
+                "type": "C2",
+                "level": 0
+            }, {
+                "id": 6,
+                "type": "C2",
+                "level": 0
+            }, {
+                "id": 7,
+                "type": "C3",
+                "level": 0
+            }]
+    }
+}

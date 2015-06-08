@@ -1,0 +1,10 @@
+{
+    "promotion_new_add" : {
+        "script" : ["src/plugins/datetimepicker/jquery.datetimepicker.js","src/fn/promotion_new_add.js"],
+        "style" : ["style/css/plugins/datetimepicker/jquery.datetimepicker.css"]
+    },
+    "promotion_management" : {
+        "script" : ["src/plugins/datetimepicker/jquery.datetimepicker.js","src/fn/promotion_management.js"],
+        "style" : ["style/css/plugins/datetimepicker/jquery.datetimepicker.css"]
+    }
+}

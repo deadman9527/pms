@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>促销活动管理 | 新增促销活动</title>
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- inject:js -->
+    <!-- endinject -->
+</head>
+<body class="pace-done body-small fixed-sidebar">
+<!--#insert file="../common/header.html" -->
+<div id="wrapper">
+    <nav class="navbar-default navbar-static-side" role="navigation">
+        @@include('common/templates/nav.html', {"parent": "l001", "child": "l0011"})
+    </nav>
+</div>
+<div id="page-wrapper" class="gray-bg">
+<div class="wrapper wrapper-content no-padding">
+<div class="row border-bottom">
+    <div class="col-lg-12">
+        <nav class="navbar navbar-fixed-top ex" role="navigation">
+            <h2 class="title">促销活动管理</h2>
+            <div class="navbar-header">
+                <a class="navbar-minimalize minimalize-styl-2 btn btn-primary smallmenu" href="javascript:;"><i
+                        class="fa fa-bars"></i> </a>
+            </div>
+        </nav>
+    </div>
+</div>
+</div>
+
+    <div class="wrapper wrapper-content animated fadeInRight">
+        <div class="row" style="padding-top: 30px;">
+            <div class="col-lg-12">
+                <div class="ibox float-e-margins">
+                    <div class="ibox-title">
+                        <h5 style="margin-top: 5px">促销活动管理 </h5>
+                        <span class="input-group-btn" style="padding-left: 100px;">
+                                        <a href="promotion_new_add.html"><span type="button" class="btn btn-sm btn-primary" style="width:50px;"> 新增</span></a>
+                                        <a href="javascript:;" cb-event="click~goToResume"><span type="button" class="btn btn-sm btn-primary shortBtn"> 恢复</span></a>
+                                        <a href="javascript:;" cb-event="click~goToPause"><span type="button" class="btn btn-sm btn-primary shortBtn"> 暂停</span></a>
+                                        <a href="javascript:;" cb-event="click~goToDelete"><span type="button" class="btn btn-sm btn-primary shortBtn"> 删除</span></a>
+                        </span>
+                    </div>
+                    <div class="ibox-content">
+                        <div class="row">
+                            <label class="col-sm-1 control-label newLable" style="margin-left:15px;">名称/编号:</label>
+                            <div class="col-sm-2 zero-padding-left">
+                                <div class="input-group adjust_width"><input type="text" placeholder="" class="input-sm form-control" cb-node="name_id"></div>
+                            </div>
+                            <label class="col-sm-1 control-label newLable">活动时间:</label>
+                            <div class="col-sm-2 zero-padding-left">
+                                <div class="input-group adjust_width"><input type="text" placeholder="" cb-node="starttime" class="input-sm form-control"></div>
+                            </div>
+                            <label class="col-sm-1 control-label newLable1">至</label>
+                            <div class="col-sm-2 zero-padding-left">
+                                <div class="input-group adjust_width"><input type="text" placeholder="" cb-node="endtime" class="input-sm form-control"></div>
+                            </div>
+                            <div class="col-sm-3">
+                            <label class="control-label newLable">活动状态：</label>
+                            <div class="m-b-xs zero-padding-left" style="display: inline-block;width: 42%;"><select class="input-sm form-control input-s-sm inline newselect" cb-node="status">
+                                <option value="0">进行中</option>
+                                <option value="1">已结束</option>
+                                <option value="2">未开始</option>
+                                <option value="3">审核中</option>
+                                <option value="4">未审核</option>
+                                <option value="5">已审核</option>
+                            </select>
+                            </div>
+                                <span class="input-group-btn" style="display: inline-block;width:20%;">
+                                        <a href="javascript:;"><span type="button" class="btn-sm btn-primary shortBtn" cb-event="click~searchResult">搜索</span></a> </span>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-striped newtable">
+                                <thead>
+                                <tr>
+                                    <th><div class="icheckbox_square-green" style="position: relative;" cb-node="th_checkbox" cb-event="click~select_box"><input type="checkbox" checked="" class="i-checks" name="input[]" style="position: absolute; opacity: 0;"></div></th>
+                                    <th class="th1">编号 </th>
+                                    <th class="th2">活动名称 </th>
+                                    <th class="th3">活动时间</th>
+                                    <th class="th4">优先级</th>
+                                    <th class="th5">是否使用优惠券</th>
+                                    <th class="th6">活动规则</th>
+                                    <th class="th7">活动状态</th>
+                                    <th class="th8">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody cb-node="promotion_activity_list">
+
+                                </tbody>
+                            </table>
+                            <div class="btn-group btn-center" style="align-content: center;">
+                                <ul class="pagination" cb-node="pagination">
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--#insert file="../common/footer.html" -->
+</body>
+
+</html>

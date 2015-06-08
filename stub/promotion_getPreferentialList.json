@@ -1,0 +1,179 @@
+{
+    "statusCode": 200,
+    "responseBody": {
+        "responseInfo": {
+            "reasons": {
+                "code": "0000",
+                "type": 0,
+                "msg": "操作成功"
+            }
+        },
+        "data": {
+            "id": 11256,
+            "base_info": "优惠促销方案一",
+            "tip": "活动提示信息",
+            "start_time": "2015-02-01 12:21:23",
+            "end_time": "2015-02-19 9:12:43",
+            "env": [1,2],
+            "add_ticket": false,
+            "act_priority": 3,
+            "selectAll": false,
+            "perf_list": [{
+                "id": 23,
+                "name": "小猪专场"
+            }, {
+                "id": 25,
+                "name": "小狗专场"
+            }],
+            "good_list": [{
+                "id": 2502,
+                "name": "捡肥皂一",
+                "type":"奶粉",
+                "support":"供应商11",
+                "status":"有效",
+                "status_code":"0"
+            }, {
+                "id": 2502,
+                "name": "捡肥皂一",
+                "type":"奶粉",
+                "support":"供应商11",
+                "status":"有效",
+                "status_code":"0"
+            }, {
+                "id": 2502,
+                "name": "捡肥皂一",
+                "type":"奶粉",
+                "support":"供应商11",
+                "status":"有效",
+                "status_code":"0"
+            }],
+            "no_perf_list": [{
+                "id": 24,
+                "name": "小猫专场"
+            }],
+            "no_good_list": [{
+                "id": 2502,
+                "name": "捡肥皂一",
+                "type":"奶粉",
+                "support":"供应商11",
+                "status":"有效",
+                "status_code":"0"
+            }],
+            "rules": [{
+                "id": 9845,
+                "target_user": [1,2,3,4],
+                "not_exceed_limit": true,
+                "rules": [{
+                    "id": 1201,
+                    "rule": {
+                        "type": 1,
+                        "value": [1, 10, 0]
+                    },
+                    "apply": {
+                        "type": 1,
+                        "value": []
+                    }
+                }, {
+                    "id": 1202,
+                    "rule": {
+                        "type": 1,
+                        "value": [2, 20, 0]
+                    },
+                    "apply": {
+                        "type": 2,
+                        "value": []
+                    }
+                }, {
+                    "id": 1203,
+                    "rule": {
+                        "type": 1,
+                        "value": [3, 30, 40]
+                    },
+                    "apply": {
+                        "type": 3,
+                        "value": [75]
+                    }
+                }, {
+                    "id": 1204,
+                    "rule": {
+                        "type": 2,
+                        "value": [5]
+                    },
+                    "apply": {
+                        "type": 4,
+                        "value": [10]
+                    }
+                }, {
+                    "id": 1205,
+                    "rule": {
+                        "type": 2,
+                        "value": [6]
+                    },
+                    "apply": {
+                        "type": 5,
+                        "value": [54684, 64684684, 6874968]
+                    }
+                }]
+            },{
+                "id": 9846,
+                "target_user": [1,2,5,6],
+                "not_exceed_limit": false,
+                "rules": [{
+                    "id": 1301,
+                    "rule": {
+                        "type": 1,
+                        "value": [1, 10, 0]
+                    },
+                    "apply": {
+                        "type": 1,
+                        "value": []
+                    }
+                }, {
+                    "id": 1302,
+                    "rule": {
+                        "type": 1,
+                        "value": [2, 20, 0]
+                    },
+                    "apply": {
+                        "type": 2,
+                        "value": []
+                    }
+                }, {
+                    "id": 1303,
+                    "rule": {
+                        "type": 1,
+                        "value": [3, 30, 40]
+                    },
+                    "apply": {
+                        "type": 3,
+                        "value": [85]
+                    }
+                }, {
+                    "id": 1304,
+                    "rule": {
+                        "type": 2,
+                        "value": [7]
+                    },
+                    "apply": {
+                        "type": 4,
+                        "value": [10]
+                    }
+                }, {
+                    "id": 1305,
+                    "rule": {
+                        "type": 2,
+                        "value": [8]
+                    },
+                    "apply": {
+                        "type": 5,
+                        "value": [54684, 64684684, 6874968]
+                    }
+                }]
+            }]
+        },
+        "total": "2",
+        "pagesize": 10,
+        "total_pages": 1,
+        "page": 1
+    }
+}
